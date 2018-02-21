@@ -22,8 +22,9 @@ def plot(b):
  
  #Bubble Sort function
 def BS(a):
-    for i in range(0,len(a)-1):
-        for j in range(0,len(a)-1):
+    n = len(a)
+    for i in range(n):
+        for j in range(0,n-i-1):
            #compare two adjacent items and swap them if the one on the left is larger
             if a[j]>a[j+1]:
                 a[j], a [j+1] = a[j+1], a[j]
