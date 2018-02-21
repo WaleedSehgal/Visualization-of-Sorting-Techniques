@@ -22,14 +22,14 @@ def plot(b):
 def MS(a):
     if len(a)<=1:
         return a
-        #Divide pat of the algorithm it divides the array to two halfs
+    #Divide pat of the algorithm it divides the array to two halfs
     mid = int(len(a)/2)
     left = MS(a[:mid])
     right = MS(a[mid:])
-    #merges right and left subarray
+    #merge right and left subarray
     return merge(left,right)
     
- #Merge function
+#Merge function
 def merge(left, right):
     result = []
     #while there are elements in the left and right sub arrays
@@ -52,7 +52,7 @@ def merge(left, right):
     #return the merged subarrays
     return result
     
- #array of randomly generated data points   
+#array of randomly generated data points   
 a = [0.420537845,
 -0.666325377,
 0.042048214,
@@ -104,10 +104,5 @@ a = [0.420537845,
 0.210578719,
 0.80093514]
 
-#print(a)
+
 B = MS(a)
-#print(B)
-
-
-
-#MergeSort(ai)
