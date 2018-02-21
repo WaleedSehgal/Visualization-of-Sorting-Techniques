@@ -26,7 +26,7 @@ def part(a,beg,lst):
     pvt = a[lst]
     #set index to the begining of the array
     index = beg
-    #current index is at the begining
+    #current index
     curind = beg
     
     while (curind <lst):
@@ -37,7 +37,8 @@ def part(a,beg,lst):
          index+=1
      curind +=1
     a[index], a[lst] = a[lst], a[index]
-    #plot sorting algorithm
+    
+    #plot 
     plot(a)
     print('.')
     return index
@@ -100,8 +101,6 @@ a = [0.420537845,
 0.210578719,
 0.80093514]        
   
-        
-
 
 QS(a,0,49)
      
